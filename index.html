@@ -7,6 +7,91 @@
     <title>Umarix Perfumes</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="images/ChatGPT Image Oct 8, 2026, 07_13_38 AM.png">
+
+    <!-- Layout fixes: keep all perfume cards centered, 3 per row, and restore popup button colors -->
+    <style>
+        #products.products-section {
+            width: 100%;
+            box-sizing: border-box;
+            text-align: center;
+        }
+
+        #products .products {
+            display: grid !important;
+            grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+            gap: 28px !important;
+            width: min(1100px, 100%) !important;
+            margin: 32px auto 0 !important;
+            align-items: stretch;
+            justify-content: center;
+            box-sizing: border-box;
+        }
+
+        #products .product {
+            width: 100% !important;
+            min-width: 0 !important;
+            max-width: none !important;
+            margin: 0 !important;
+            float: none !important;
+            box-sizing: border-box;
+            text-align: center;
+        }
+
+        #products .product-image {
+            width: 100%;
+            overflow: hidden;
+        }
+
+        #products .product-image img {
+            display: block;
+            width: 100%;
+            max-width: 100%;
+            height: 260px;
+            object-fit: contain;
+            margin: 0 auto;
+        }
+
+        #products .product-info {
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        #welcomePopup .popup-box .enter-button,
+        #welcomePopup .popup-box button.enter-button {
+            background: #FFD700 !important;
+            color: #000000 !important;
+            border: 2px solid #000000 !important;
+            border-radius: 8px !important;
+            padding: 12px 25px !important;
+            font-weight: 700 !important;
+            cursor: pointer;
+        }
+
+        #welcomePopup .popup-box .enter-button:hover {
+            background: #000000 !important;
+            color: #FFD700 !important;
+            border-color: #FFD700 !important;
+        }
+
+        @media (max-width: 800px) {
+            #products .products {
+                grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+                gap: 20px !important;
+            }
+        }
+
+        @media (max-width: 520px) {
+            #products .products {
+                grid-template-columns: minmax(0, 1fr) !important;
+                width: min(360px, 100%) !important;
+            }
+
+            #products .product-image img {
+                height: 230px;
+            }
+        }
+    </style>
+
 </head>
 <body>
     <!-- Welcome Popup -->
@@ -122,66 +207,78 @@
                     <span class="image-number">04</span>
                 </div>
                 <div class="product-info">
-                 
-<!-- Perfume 4 -->
-<div class="product">
-    <img src="images/perfume4.png" alt="Umarix Rose">
-    <h3>Umarix Rose</h3>
-    <p>Price: Rs. 2,999</p>
-    <button onclick="addToCart('Umarix Rose', 2999)">
-        Add to Cart
-    </button>
-</div>
+                    <h3>Umarix Rose</h3>
+                    <p class="product-description">Soft &amp; Floral Fragrance</p>
+                    <p class="product-price">Rs. 2,999</p>
+                    <button class="add-button" onclick="event.stopPropagation(); addToCart('Umarix Rose', 2999)">Add to Cart</button>
+                </div>
+            </article>
 
-<!-- Perfume 5 -->
-<div class="product">
-    <img src="images/perfume5.png" alt="Umarix Oud">
-    <h3>Umarix Oud</h3>
-    <p>Price: Rs. 2,999</p>
-    <button onclick="addToCart('Umarix Oud', 2999)">
-        Add to Cart
-    </button>
-</div>
+            <article class="product" data-product="4" tabindex="0" role="button" aria-label="View Umarix Oud details">
+                <div class="product-image">
+                    <img src="images/perfume5.png" alt="Umarix Oud perfume" loading="lazy">
+                    <span class="image-number">05</span>
+                </div>
+                <div class="product-info">
+                    <h3>Umarix Oud</h3>
+                    <p class="product-description">Warm &amp; Woody Fragrance</p>
+                    <p class="product-price">Rs. 2,999</p>
+                    <button class="add-button" onclick="event.stopPropagation(); addToCart('Umarix Oud', 2999)">Add to Cart</button>
+                </div>
+            </article>
 
-<!-- Perfume 6 -->
-<div class="product">
-    <img src="images/perfume6.png" alt="Umarix Ocean">
-    <h3>Umarix Ocean</h3>
-    <p>Price: Rs. 2,999</p>
-    <button onclick="addToCart('Umarix Ocean', 2999)">
-        Add to Cart
-    </button>
-</div>
+            <article class="product" data-product="5" tabindex="0" role="button" aria-label="View Umarix Ocean details">
+                <div class="product-image">
+                    <img src="images/perfume6.png" alt="Umarix Ocean perfume" loading="lazy">
+                    <span class="image-number">06</span>
+                </div>
+                <div class="product-info">
+                    <h3>Umarix Ocean</h3>
+                    <p class="product-description">Fresh &amp; Aquatic Fragrance</p>
+                    <p class="product-price">Rs. 2,999</p>
+                    <button class="add-button" onclick="event.stopPropagation(); addToCart('Umarix Ocean', 2999)">Add to Cart</button>
+                </div>
+            </article>
 
-<!-- Perfume 7 -->
-<div class="product">
-    <img src="images/perfume7.png" alt="Umarix Velvet">
-    <h3>Umarix Velvet</h3>
-    <p>Price: Rs. 2,999</p>
-    <button onclick="addToCart('Umarix Velvet', 2999)">
-        Add to Cart
-    </button>
-</div>
+            <article class="product" data-product="6" tabindex="0" role="button" aria-label="View Umarix Velvet details">
+                <div class="product-image">
+                    <img src="images/perfume7.png" alt="Umarix Velvet perfume" loading="lazy">
+                    <span class="image-number">07</span>
+                </div>
+                <div class="product-info">
+                    <h3>Umarix Velvet</h3>
+                    <p class="product-description">Smooth &amp; Elegant Fragrance</p>
+                    <p class="product-price">Rs. 2,999</p>
+                    <button class="add-button" onclick="event.stopPropagation(); addToCart('Umarix Velvet', 2999)">Add to Cart</button>
+                </div>
+            </article>
 
-<!-- Perfume 8 -->
-<div class="product">
-    <img src="images/perfume8.png" alt="Umarix Royal">
-    <h3>Umarix Royal</h3>
-    <p>Price: Rs. 2,999</p>
-    <button onclick="addToCart('Umarix Royal', 2999)">
-        Add to Cart
-    </button>
-</div>
+            <article class="product" data-product="7" tabindex="0" role="button" aria-label="View Umarix Royal details">
+                <div class="product-image">
+                    <img src="images/perfume8.png" alt="Umarix Royal perfume" loading="lazy">
+                    <span class="image-number">08</span>
+                </div>
+                <div class="product-info">
+                    <h3>Umarix Royal</h3>
+                    <p class="product-description">Rich &amp; Refined Fragrance</p>
+                    <p class="product-price">Rs. 2,999</p>
+                    <button class="add-button" onclick="event.stopPropagation(); addToCart('Umarix Royal', 2999)">Add to Cart</button>
+                </div>
+            </article>
 
-<!-- Perfume 9 -->
-<div class="product">
-    <img src="images/perfume9.png" alt="Umarix Musk">
-    <h3>Umarix Musk</h3>
-    <p>Price: Rs. 2,999</p>
-    <button onclick="addToCart('Umarix Musk', 2999)">
-        Add to Cart
-    </button>
-</div>
+            <article class="product" data-product="8" tabindex="0" role="button" aria-label="View Umarix Musk details">
+                <div class="product-image">
+                    <img src="images/perfume9.png" alt="Umarix Musk perfume" loading="lazy">
+                    <span class="image-number">09</span>
+                </div>
+                <div class="product-info">
+                    <h3>Umarix Musk</h3>
+                    <p class="product-description">Clean &amp; Memorable Fragrance</p>
+                    <p class="product-price">Rs. 2,999</p>
+                    <button class="add-button" onclick="event.stopPropagation(); addToCart('Umarix Musk', 2999)">Add to Cart</button>
+                </div>
+            </article>
+        </div>
     </section>
 
     <!-- About -->
