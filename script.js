@@ -1,11 +1,15 @@
+// =================
+// UMARIX PERFUMES 
+// =================
+
 const products = [
     {
         id: 1,
         name: "Umarix Black",
         price: 2999,
         image: "images/perfume1.jpg",
-        tagline: "Bold & powerful fragrance",
-        description: "A confident, deep scent for evenings and special occasions.",
+        tagline: "Bold & powerful",
+        description: "A bold, confident fragrance concept for evenings and special occasions.",
         notes: "Woody • Amber"
     },
     {
@@ -13,7 +17,7 @@ const products = [
         name: "Umarix Rose",
         price: 2799,
         image: "images/perfume2.png",
-        tagline: "Soft & elegant fragrance",
+        tagline: "Soft & elegant",
         description: "A soft floral-inspired fragrance with an elegant character.",
         notes: "Floral • Soft"
     },
@@ -22,8 +26,8 @@ const products = [
         name: "Umarix Gold",
         price: 3199,
         image: "images/perfume3.png",
-        tagline: "Warm & refined fragrance",
-        description: "A warm, refined fragrance for everyday use.",
+        tagline: "Warm & refined",
+        description: "A warm, refined fragrance concept for everyday style.",
         notes: "Warm • Elegant"
     },
     {
@@ -31,7 +35,7 @@ const products = [
         name: "Umarix Oud",
         price: 3299,
         image: "images/perfume4.png",
-        tagline: "Rich & woody fragrance",
+        tagline: "Rich & woody",
         description: "A rich woody fragrance with a classic character.",
         notes: "Woody • Oud"
     },
@@ -40,8 +44,8 @@ const products = [
         name: "Umarix Ocean",
         price: 2999,
         image: "images/perfume5.png",
-        tagline: "Fresh & aquatic fragrance",
-        description: "A fresh, aquatic-inspired fragrance.",
+        tagline: "Fresh & aquatic",
+        description: "A fresh aquatic-inspired fragrance.",
         notes: "Fresh • Aquatic"
     },
     {
@@ -59,7 +63,7 @@ const products = [
         price: 3499,
         image: "images/perfume7.png",
         tagline: "Regal & luxurious",
-        description: "A bold fragrance concept inspired by classic luxury.",
+        description: "A bold fragrance inspired by classic luxury.",
         notes: "Rich • Warm"
     },
     {
@@ -68,7 +72,7 @@ const products = [
         price: 2999,
         image: "images/perfume8.png",
         tagline: "Warm & memorable",
-        description: "A soft musk-inspired fragrance concept.",
+        description: "A soft musk-inspired fragrance.",
         notes: "Musk • Warm"
     },
     {
@@ -85,8 +89,8 @@ const products = [
         name: "Umarix Ember",
         price: 3299,
         image: "images/perfume10.png",
-        tagline: "Warm amber fragrance",
-        description: "A warm amber-inspired fragrance concept.",
+        tagline: "Warm amber",
+        description: "A warm amber-inspired fragrance.",
         notes: "Amber • Warm"
     },
     {
@@ -95,7 +99,7 @@ const products = [
         price: 2799,
         image: "images/perfume11.png",
         tagline: "Bright & fresh",
-        description: "A lively citrus-inspired fragrance concept.",
+        description: "A lively citrus-inspired fragrance.",
         notes: "Citrus • Fresh"
     },
     {
@@ -103,8 +107,8 @@ const products = [
         name: "Umarix Aqua Storm",
         price: 3199,
         image: "images/perfume12.png",
-        tagline: "Cool ocean fragrance",
-        description: "A cool, aquatic-inspired fragrance concept.",
+        tagline: "Cool & refreshing",
+        description: "A cool aquatic-inspired fragrance.",
         notes: "Aquatic • Cool"
     },
     {
@@ -113,7 +117,7 @@ const products = [
         price: 3499,
         image: "images/perfume13.png",
         tagline: "Rich & royal",
-        description: "A rich amber-inspired fragrance concept.",
+        description: "A rich amber-inspired fragrance.",
         notes: "Amber • Rich"
     },
     {
@@ -121,8 +125,8 @@ const products = [
         name: "Umarix Midnight Spice",
         price: 3299,
         image: "images/perfume14.png",
-        tagline: "Dark spicy fragrance",
-        description: "A bold, spicy fragrance concept for evenings.",
+        tagline: "Dark & spicy",
+        description: "A bold, spicy fragrance concept.",
         notes: "Spicy • Dark"
     },
     {
@@ -131,7 +135,7 @@ const products = [
         price: 3199,
         image: "images/perfume15.png",
         tagline: "Woody & earthy",
-        description: "A woody fragrance concept inspired by cedar.",
+        description: "A woody fragrance inspired by cedar.",
         notes: "Cedar • Woody"
     },
     {
@@ -139,8 +143,8 @@ const products = [
         name: "Umarix Bloom Royale",
         price: 2999,
         image: "images/perfume16.png",
-        tagline: "Floral fragrance",
-        description: "A graceful floral-inspired fragrance concept.",
+        tagline: "Floral & graceful",
+        description: "A graceful floral-inspired fragrance.",
         notes: "Floral • Soft"
     },
     {
@@ -148,8 +152,8 @@ const products = [
         name: "Umarix Vanilla Haze",
         price: 2999,
         image: "images/perfume17.png",
-        tagline: "Creamy vanilla fragrance",
-        description: "A creamy vanilla-inspired fragrance concept.",
+        tagline: "Creamy vanilla",
+        description: "A creamy vanilla-inspired fragrance.",
         notes: "Vanilla • Creamy"
     },
     {
@@ -163,9 +167,7 @@ const products = [
     }
 ];
 
-let cart = [];
-let activeProduct = null;
-
+// Example reviews for selected perfumes.
 const demoReviews = {
     1: [
         {
@@ -174,7 +176,7 @@ const demoReviews = {
             text: "The bottle design looks bold and classy."
         },
         {
-            name: "M. Ali",
+            name: "Ali",
             rating: 4,
             text: "Nice product presentation."
         }
@@ -183,14 +185,14 @@ const demoReviews = {
         {
             name: "Hassan",
             rating: 5,
-            text: "Love the warm amber-inspired concept."
+            text: "Love the warm fragrance concept."
         }
     ],
     17: [
         {
             name: "Sara",
             rating: 5,
-            text: "The cream and gold design looks elegant."
+            text: "The design looks elegant."
         }
     ],
     18: [
@@ -202,16 +204,69 @@ const demoReviews = {
     ]
 };
 
-// Close the welcome popup.
-function closePopup() {
-    const popup = document.getElementById("welcomePopup");
+let activeProduct = null;
+let cart = [];
+let toastTimer = null;
 
-    if (popup) {
-        popup.style.display = "none";
-    }
+const productGrid = document.getElementById("productGrid");
+const productModal = document.getElementById("productModal");
+const cartDrawer = document.getElementById("cartDrawer");
+const drawerBackdrop = document.getElementById("drawerBackdrop");
+const toast = document.getElementById("toast");
+
+// ========================================
+// ENTER WEBSITE BUTTON
+// ========================================
+
+document
+    .getElementById("enterWebsiteButton")
+    .addEventListener("click", function () {
+        document
+            .getElementById("welcomeScreen")
+            .classList.add("hidden");
+    });
+
+// ========================================
+// FORMAT PRICE
+// ========================================
+
+function money(price) {
+    return "Rs. " + Number(price).toLocaleString("en-PK");
 }
 
-// Read reviews saved in this browser.
+// ========================================
+// CREATE RATING STARS
+// ========================================
+
+function stars(rating) {
+    const value = Math.max(
+        0,
+        Math.min(5, Math.round(Number(rating) || 0))
+    );
+
+    return "★".repeat(value) + "☆".repeat(5 - value);
+}
+
+// ========================================
+// PROTECT TEXT ENTERED BY VISITORS
+// ========================================
+
+function escapeHTML(value) {
+    return String(value).replace(/[&<>"']/g, function (character) {
+        return {
+            "&": "&amp;",
+            "<": "&lt;",
+            ">": "&gt;",
+            '"': "&quot;",
+            "'": "&#39;"
+        }[character];
+    });
+}
+
+// ========================================
+// LOAD SAVED REVIEWS
+// ========================================
+
 function getSavedReviews() {
     try {
         return JSON.parse(
@@ -222,7 +277,10 @@ function getSavedReviews() {
     }
 }
 
-// Combine demo reviews with reviews submitted by visitors.
+// ========================================
+// GET ALL REVIEWS FOR A PERFUME
+// ========================================
+
 function allReviewsFor(productId) {
     const saved = getSavedReviews();
 
@@ -232,401 +290,263 @@ function allReviewsFor(productId) {
     ];
 }
 
-// Display stars.
-function stars(value) {
-    value = Math.max(0, Math.min(5, Number(value) || 0));
+// ========================================
+// DISPLAY ALL 18 PERFUMES
+// ========================================
 
-    return "★".repeat(value) + "☆".repeat(5 - value);
+function renderProducts(searchTerm = "") {
+    const term = searchTerm.trim().toLowerCase();
+
+    const filtered = products.filter(function (product) {
+        return (
+            product.name.toLowerCase().includes(term) ||
+            product.tagline.toLowerCase().includes(term) ||
+            product.notes.toLowerCase().includes(term)
+        );
+    });
+
+    document.getElementById("collectionCount").textContent =
+        filtered.length +
+        (filtered.length === 1 ? " perfume" : " perfumes");
+
+    if (filtered.length === 0) {
+        productGrid.innerHTML =
+            '<p class="empty-state">No perfumes found. Try another search.</p>';
+
+        return;
+    }
+
+    productGrid.innerHTML = filtered.map(function (product) {
+        return `
+            <article class="product-card">
+
+                <button
+                    class="product-image-button"
+                    type="button"
+                    data-details-product="${product.id}"
+                    aria-label="View ${escapeHTML(product.name)} details"
+                >
+                    <div class="product-image-wrap">
+
+                        <img
+                            src="${product.image}"
+                            alt="${escapeHTML(product.name)} perfume bottle"
+                            loading="lazy"
+                        >
+
+                        <div class="fallback" style="display:none">
+                            UMARIX
+                        </div>
+
+                    </div>
+                </button>
+
+                <div class="product-info">
+
+                    <p class="product-kicker">
+                        UMARIX SIGNATURE
+                    </p>
+
+                    <h3>${escapeHTML(product.name)}</h3>
+
+                    <p class="product-tagline">
+                        ${escapeHTML(product.tagline)}
+                    </p>
+
+                    <p
+                        class="card-rating"
+                        data-rating-for="${product.id}"
+                    ></p>
+
+                    <div class="product-bottom">
+
+                        <span class="product-price">
+                            ${money(product.price)}
+                        </span>
+
+                        <button
+                            class="details-button"
+                            type="button"
+                            data-details-product="${product.id}"
+                        >
+                            Details & Reviews ↗
+                        </button>
+
+                        <button
+                            class="button gold add-card-button"
+                            type="button"
+                            data-add-product="${product.id}"
+                        >
+                            Add to Cart
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </article>
+        `;
+    }).join("");
+
+    // Show a fallback if a perfume image cannot be found.
+    productGrid
+        .querySelectorAll(".product-image-wrap img")
+        .forEach(function (image) {
+            image.addEventListener(
+                "error",
+                function () {
+                    image.style.display = "none";
+                    image.nextElementSibling.style.display = "flex";
+                },
+                { once: true }
+            );
+        });
+
+    refreshCardRatings();
 }
 
-// Format prices.
-function money(value) {
-    return "Rs. " + Number(value).toLocaleString("en-PK");
-}
+// ========================================
+// UPDATE RATINGS ON PERFUME CARDS
+// ========================================
 
-// Refresh ratings shown on product cards.
 function refreshCardRatings() {
-    products.forEach(product => {
-        const reviews = allReviewsFor(product.id);
-
+    products.forEach(function (product) {
         const target = document.querySelector(
             `[data-rating-for="${product.id}"]`
         );
 
-        if (!target) return;
+        if (!target) {
+            return;
+        }
 
-        if (!reviews.length) {
+        const reviews = allReviewsFor(product.id);
+
+        if (reviews.length === 0) {
             target.innerHTML =
-                `☆☆☆☆☆ <span>No ratings yet</span>`;
+                '☆☆☆☆☆ <span>No reviews yet</span>';
 
             return;
         }
 
-        const average = reviews.reduce(
-            (sum, review) => sum + Number(review.rating),
-            0
-        ) / reviews.length;
+        const average = reviews.reduce(function (sum, review) {
+            return sum + Number(review.rating);
+        }, 0) / reviews.length;
 
-        target.innerHTML =
-            `${stars(Math.round(average))}
-            <span>${average.toFixed(1)} (${reviews.length}
-            ${reviews.length === 1 ? "review" : "reviews"})</span>`;
+        target.innerHTML = `
+            ${stars(average)}
+            <span>
+                ${average.toFixed(1)} · ${reviews.length} reviews
+            </span>
+        `;
     });
 }
 
-// Open product details.
+// ========================================
+// OPEN PERFUME DETAILS AND REVIEWS
+// ========================================
+
 function openProductModal(productId) {
-    activeProduct = products.find(
-        product => product.id === Number(productId)
-    );
+    activeProduct = products.find(function (product) {
+        return product.id === Number(productId);
+    });
 
-    if (!activeProduct) return;
+    if (!activeProduct) {
+        return;
+    }
 
-    document.getElementById("modalImage").src =
-        activeProduct.image;
+    const image = document.getElementById("modalImage");
+    const fallback = document.getElementById("modalImageFallback");
 
-    document.getElementById("modalImage").alt =
-        activeProduct.name + " perfume bottle";
+    image.style.display = "block";
+    fallback.style.display = "none";
+
+    image.src = activeProduct.image;
+    image.alt = activeProduct.name + " perfume bottle";
+
+    image.onerror = function () {
+        image.style.display = "none";
+        fallback.style.display = "flex";
+    };
 
     document.getElementById("modalTitle").textContent =
         activeProduct.name;
 
-    document.getElementById("modalNotes").textContent =
-        activeProduct.notes;
+    document.getElementById("modalTagline").textContent =
+        activeProduct.tagline;
 
     document.getElementById("modalDescription").textContent =
         activeProduct.description;
 
+    document.getElementById("modalNotes").textContent =
+        "Notes: " + activeProduct.notes;
+
     document.getElementById("modalPrice").textContent =
         money(activeProduct.price);
 
-    document.getElementById("detailAddButton").onclick = () => {
+    document.getElementById("reviewForm").reset();
+
+    document.getElementById("detailAddButton").onclick = function () {
         addToCart(activeProduct.id);
     };
 
-    document.getElementById("reviewForm").reset();
-
     renderReviews(activeProduct.id);
 
-    const modal = document.getElementById("productModal");
+    productModal.classList.add("show");
 
-    modal.classList.add("show");
-    modal.setAttribute("aria-hidden", "false");
+    productModal.setAttribute("aria-hidden", "false");
 
-    document.body.style.overflow = "hidden";
+    document.body.classList.add("modal-open");
+
+    document.getElementById("closeProductModal").focus();
 }
 
-// Close product details.
+// ========================================
+// CLOSE PERFUME DETAILS
+// ========================================
+
 function closeProductModal() {
-    const modal = document.getElementById("productModal");
+    productModal.classList.remove("show");
 
-    if (!modal) return;
+    productModal.setAttribute("aria-hidden", "true");
 
-    modal.classList.remove("show");
-    modal.setAttribute("aria-hidden", "true");
-
-    document.body.style.overflow = "";
+    document.body.classList.remove("modal-open");
 
     activeProduct = null;
 }
 
-// Display product reviews.
+// ========================================
+// DISPLAY REVIEWS
+// ========================================
 function renderReviews(productId) {
     const reviews = allReviewsFor(productId);
 
     const averageTarget =
         document.getElementById("averageRating");
 
-    const list = document.getElementById("reviewsList");
+    const summaryTarget =
+        document.getElementById("modalRatingSummary");
 
-    if (!reviews.length) {
-        averageTarget.textContent = "☆☆☆☆☆ No ratings yet";
+    const list =
+        document.getElementById("reviewsList");
 
-        list.innerHTML =
-            '<p class="no-reviews">No reviews yet. Be the first to leave one!</p>';
+    if (reviews.length === 0) {
+        averageTarget.textContent = "No ratings yet";
+
+        summaryTarget.textContent =
+            "☆☆☆☆☆ Be the first to review";
+
+        list.innerHTML = `
+            <p class="no-reviews">
+                No reviews yet. Be the first to leave one!
+            </p>
+        `;
 
         return;
     }
 
-    const average = reviews.reduce(
-        (sum, review) => sum + Number(review.rating),
-        0
-    ) / reviews.length;
+    const average = reviews.reduce(function (sum, review) {
+        return sum + Number(review.rating);
+    }, 0) / reviews.length;
 
     averageTarget.textContent =
-        `${stars(Math.round(average))} ${average.toFixed(1)} / 5 ·
-        ${reviews.length} ${reviews.length === 1 ? "review" : "reviews"}`;
-
-    list.innerHTML = reviews.map(review => `
-        <article class="review-item">
-            <strong>${escapeHTML(review.name || "Guest")}</strong>
-
-            <div class="review-stars">
-                ${stars(Number(review.rating))}
-            </div>
-
-            <p>${escapeHTML(review.text)}</p>
-        </article>
-    `).join("");
-}
-
-// Protect the page when displaying visitor-written text.
-function escapeHTML(value) {
-    return String(value).replace(/[&<>"']/g, character => ({
-        "&": "&amp;",
-        "<": "&lt;",
-        ">": "&gt;",
-        '"': "&quot;",
-        "'": "&#39;"
-    })[character]);
-}
-
-// Submit a product review.
-document.getElementById("reviewForm").addEventListener(
-    "submit",
-    function (event) {
-        event.preventDefault();
-
-        if (!activeProduct) return;
-
-        const chosen = this.querySelector(
-            'input[name="rating"]:checked'
-        );
-
-        const reviewText =
-            document.getElementById("reviewText").value.trim();
-
-        if (!chosen || !reviewText) {
-            showCartMessage(
-                "Please choose a star rating and write a review."
-            );
-
-            return;
-        }
-
-        const name =
-            document.getElementById("reviewName").value.trim()
-            || "Guest";
-
-        const saved = getSavedReviews();
-
-        const list = saved[activeProduct.id] || [];
-
-        list.unshift({
-            name: name,
-            rating: Number(chosen.value),
-            text: reviewText,
-            date: new Date().toISOString()
-        });
-
-        saved[activeProduct.id] = list.slice(0, 100);
-
-        try {
-            localStorage.setItem(
-                "umarixReviews",
-                JSON.stringify(saved)
-            );
-        } catch (error) {
-            showCartMessage(
-                "Could not save review in this browser."
-            );
-
-            return;
-        }
-
-        this.reset();
-
-        renderReviews(activeProduct.id);
-        refreshCardRatings();
-
-        showCartMessage(
-            "Thanks! Your review was saved on this browser."
-        );
-    }
-);
-
-// Add a product to the cart.
-function addToCart(productId) {
-    const product = products.find(
-        item => item.id === Number(productId)
-    );
-
-    if (!product) return;
-
-    const existing = cart.find(
-        item => item.id === product.id
-    );
-
-    if (existing) {
-        existing.quantity += 1;
-    } else {
-        cart.push({
-            id: product.id,
-            name: product.name,
-            price: product.price,
-            quantity: 1
-        });
-    }
-
-    updateCart();
-
-    showCartMessage(product.name + " added to cart!");
-}
-
-// Update the cart counter.
-function updateCart() {
-    const count = cart.reduce(
-        (sum, item) => sum + item.quantity,
-        0
-    );
-
-    document.getElementById("cartCount").textContent = count;
-}
-
-// Open cart and display its items.
-function openCart() {
-    const items = document.getElementById("cartItems");
-    const totalTarget = document.getElementById("cartTotal");
-
-    items.innerHTML = "";
-
-    let total = 0;
-
-    if (!cart.length) {
-        items.innerHTML =
-            '<p class="no-reviews">Your cart is empty.</p>';
-    }
-
-    cart.forEach((item, index) => {
-        total += item.price * item.quantity;
-
-        const row = document.createElement("div");
-
-        row.className = "cart-item";
-
-        row.innerHTML = `
-            <div>
-                <h3>${escapeHTML(item.name)}</h3>
-                <p>${money(item.price)} × ${item.quantity}</p>
-            </div>
-
-            <button type="button" data-remove-index="${index}">
-                Remove
-            </button>
-        `;
-
-        items.appendChild(row);
-    });
-
-    items.querySelectorAll("[data-remove-index]").forEach(
-        button => {
-            button.addEventListener("click", () => {
-                removeFromCart(
-                    Number(button.dataset.removeIndex)
-                );
-            });
-        }
-    );
-
-    totalTarget.textContent = money(total);
-
-    document.getElementById("cartBox").classList.add("show");
-}
-
-// Close cart.
-function closeCart() {
-    document.getElementById("cartBox").classList.remove("show");
-}
-
-// Remove an item from the cart.
-function removeFromCart(index) {
-    cart.splice(index, 1);
-
-    updateCart();
-    openCart();
-}
-
-// Show a small message.
-function showCartMessage(message) {
-    const box = document.getElementById("cartMessage");
-
-    box.textContent = "✓ " + message;
-    box.classList.add("show");
-
-    window.clearTimeout(showCartMessage.timer);
-
-    showCartMessage.timer = window.setTimeout(() => {
-        box.classList.remove("show");
-    }, 2600);
-}
-
-// Demo checkout message.
-function openCheckout() {
-    if (cart.length) {
-        showCartMessage(
-            "Demo checkout is not connected yet."
-        );
-    } else {
-        showCartMessage("Your cart is empty!");
-    }
-}
-
-// Make product cards clickable.
-document.querySelectorAll(".product").forEach(card => {
-    card.addEventListener("click", event => {
-        if (event.target.closest("button")) return;
-
-        openProductModal(card.dataset.productId);
-    });
-
-    card.addEventListener("keydown", event => {
-        if (
-            (event.key === "Enter" || event.key === " ") &&
-            event.target === card
-        ) {
-            event.preventDefault();
-
-            openProductModal(card.dataset.productId);
-        }
-    });
-});
-
-// Details buttons.
-document.querySelectorAll("[data-details-product]").forEach(
-    button => {
-        button.addEventListener("click", () => {
-            openProductModal(
-                button.dataset.detailsProduct
-            );
-        });
-    }
-);
-
-// Add-to-cart buttons.
-document.querySelectorAll("[data-add-product]").forEach(
-    button => {
-        button.addEventListener("click", () => {
-            addToCart(button.dataset.addProduct);
-        });
-    }
-);
-
-// Close product details by clicking outside the modal.
-document.getElementById("productModal").addEventListener(
-    "click",
-    event => {
-        if (event.target.id === "productModal") {
-            closeProductModal();
-        }
-    }
-);
-
-// Escape key closes product details.
-document.addEventListener("keydown", event => {
-    if (event.key === "Escape") {
-        closeProductModal();
-    }
-});
-
-// Display existing ratings when the page loads.
-refreshCardRatings();
+        `${stars
