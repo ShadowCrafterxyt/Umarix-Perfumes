@@ -8,40 +8,51 @@
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="images/ChatGPT Image Oct 8, 2026, 07_13_38 AM.png">
 
-    <!-- Layout fixes: keep all perfume cards centered, 3 per row, and restore popup button colors -->
+    <!-- Layout fixes -->
     <style>
         #products.products-section {
-            width: 100%;
-            box-sizing: border-box;
-            text-align: center;
+            width: 100% !important;
+            max-width: none !important;
+            margin-left: auto !important;
+            margin-right: auto !important;
+            padding-left: 24px !important;
+            padding-right: 24px !important;
+            box-sizing: border-box !important;
+            text-align: center !important;
         }
 
-        #products .products {
+        #products.products-section > .products {
             display: grid !important;
             grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
             gap: 28px !important;
-            width: min(1100px, 100%) !important;
-            margin: 32px auto 0 !important;
-            align-items: stretch;
-            justify-content: center;
-            box-sizing: border-box;
+            width: 100% !important;
+            max-width: 1100px !important;
+            margin: 32px auto 0 auto !important;
+            padding: 0 !important;
+            float: none !important;
+            position: relative !important;
+            left: auto !important;
+            right: auto !important;
+            transform: none !important;
+            box-sizing: border-box !important;
+            justify-content: center !important;
+            align-items: stretch !important;
         }
 
-        #products .product {
+        #products.products-section > .products > .product {
+            display: block !important;
             width: 100% !important;
             min-width: 0 !important;
             max-width: none !important;
             margin: 0 !important;
             float: none !important;
-            box-sizing: border-box;
-            text-align: center;
+            position: static !important;
+            transform: none !important;
+            box-sizing: border-box !important;
+            text-align: center !important;
         }
 
-        #products .product-image {
-            width: 100%;
-            overflow: hidden;
-        }
-
+        #products .product-image { width: 100%; overflow: hidden; }
         #products .product-image img {
             display: block;
             width: 100%;
@@ -50,11 +61,7 @@
             object-fit: contain;
             margin: 0 auto;
         }
-
-        #products .product-info {
-            width: 100%;
-            box-sizing: border-box;
-        }
+        #products .product-info { width: 100%; box-sizing: border-box; }
 
         #welcomePopup .popup-box .enter-button,
         #welcomePopup .popup-box button.enter-button {
@@ -66,7 +73,6 @@
             font-weight: 700 !important;
             cursor: pointer;
         }
-
         #welcomePopup .popup-box .enter-button:hover {
             background: #000000 !important;
             color: #FFD700 !important;
@@ -74,21 +80,18 @@
         }
 
         @media (max-width: 800px) {
-            #products .products {
+            #products.products-section > .products {
                 grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
                 gap: 20px !important;
             }
         }
-
         @media (max-width: 520px) {
-            #products .products {
+            #products.products-section { padding-left: 16px !important; padding-right: 16px !important; }
+            #products.products-section > .products {
                 grid-template-columns: minmax(0, 1fr) !important;
-                width: min(360px, 100%) !important;
+                max-width: 360px !important;
             }
-
-            #products .product-image img {
-                height: 230px;
-            }
+            #products .product-image img { height: 230px; }
         }
     </style>
 
@@ -276,6 +279,114 @@
                     <p class="product-description">Clean &amp; Memorable Fragrance</p>
                     <p class="product-price">Rs. 2,999</p>
                     <button class="add-button" onclick="event.stopPropagation(); addToCart('Umarix Musk', 2999)">Add to Cart</button>
+                </div>
+            </article> 
+            <article class="product" data-product="9" tabindex="0" role="button" aria-label="View Umarix Ember details">
+                <div class="product-image">
+                    <img src="images/perfume10.png" alt="Umarix Ember perfume" loading="lazy">
+                    <span class="image-number">10</span>
+                </div>
+                <div class="product-info">
+                    <h3>Umarix Ember</h3>
+                    <p class="product-description">Bold & Warm Fragrance</p>
+                    <p class="product-price">Rs. 3,299</p>
+                    <button class="add-button" onclick="event.stopPropagation(); addToCart('Umarix Ember', 3299)">Add to Cart</button>
+                </div>
+            </article> 
+            <article class="product" data-product="10" tabindex="0" role="button" aria-label="View Umarix Citrus Rush details">
+                <div class="product-image">
+                    <img src="images/perfume11.png" alt="Umarix Citrus Rush perfume" loading="lazy">
+                    <span class="image-number">11</span>
+                </div>
+                <div class="product-info">
+                    <h3>Umarix Citrus Rush</h3>
+                    <p class="product-description">Bright & Fresh Fragrance</p>
+                    <p class="product-price">Rs. 2,799</p>
+                    <button class="add-button" onclick="event.stopPropagation(); addToCart('Umarix Citrus Rush', 2799)">Add to Cart</button>
+                </div>
+            </article> 
+            <article class="product" data-product="11" tabindex="0" role="button" aria-label="View Umarix Aqua Storm details">
+                <div class="product-image">
+                    <img src="images/perfume12.png" alt="Umarix Aqua Storm perfume" loading="lazy">
+                    <span class="image-number">12</span>
+                </div>
+                <div class="product-info">
+                    <h3>Umarix Aqua Storm</h3>
+                    <p class="product-description">Cool & Aquatic Fragrance</p>
+                    <p class="product-price">Rs. 3,199</p>
+                    <button class="add-button" onclick="event.stopPropagation(); addToCart('Umarix Aqua Storm', 3199)">Add to Cart</button>
+                </div>
+            </article> 
+            <article class="product" data-product="12" tabindex="0" role="button" aria-label="View Umarix Amber Crown details">
+                <div class="product-image">
+                    <img src="images/perfume13.png" alt="Umarix Amber Crown perfume" loading="lazy">
+                    <span class="image-number">13</span>
+                </div>
+                <div class="product-info">
+                    <h3>Umarix Amber Crown</h3>
+                    <p class="product-description">Rich & Royal Fragrance</p>
+                    <p class="product-price">Rs. 3,499</p>
+                    <button class="add-button" onclick="event.stopPropagation(); addToCart('Umarix Amber Crown', 3499)">Add to Cart</button>
+                </div>
+            </article> 
+            <article class="product" data-product="13" tabindex="0" role="button" aria-label="View Umarix Midnight Spice details">
+                <div class="product-image">
+                    <img src="images/perfume14.png" alt="Umarix Midnight Spice perfume" loading="lazy">
+                    <span class="image-number">14</span>
+                </div>
+                <div class="product-info">
+                    <h3>Umarix Midnight Spice</h3>
+                    <p class="product-description">Deep & Spicy Fragrance</p>
+                    <p class="product-price">Rs. 3,299</p>
+                    <button class="add-button" onclick="event.stopPropagation(); addToCart('Umarix Midnight Spice', 3299)">Add to Cart</button>
+                </div>
+            </article> 
+            <article class="product" data-product="14" tabindex="0" role="button" aria-label="View Umarix Cedar Smoke details">
+                <div class="product-image">
+                    <img src="images/perfume15.png" alt="Umarix Cedar Smoke perfume" loading="lazy">
+                    <span class="image-number">15</span>
+                </div>
+                <div class="product-info">
+                    <h3>Umarix Cedar Smoke</h3>
+                    <p class="product-description">Woody & Sophisticated Fragrance</p>
+                    <p class="product-price">Rs. 3,199</p>
+                    <button class="add-button" onclick="event.stopPropagation(); addToCart('Umarix Cedar Smoke', 3199)">Add to Cart</button>
+                </div>
+            </article> 
+            <article class="product" data-product="15" tabindex="0" role="button" aria-label="View Umarix Bloom Royale details">
+                <div class="product-image">
+                    <img src="images/perfume16.png" alt="Umarix Bloom Royale perfume" loading="lazy">
+                    <span class="image-number">16</span>
+                </div>
+                <div class="product-info">
+                    <h3>Umarix Bloom Royale</h3>
+                    <p class="product-description">Soft & Floral Fragrance</p>
+                    <p class="product-price">Rs. 2,999</p>
+                    <button class="add-button" onclick="event.stopPropagation(); addToCart('Umarix Bloom Royale', 2999)">Add to Cart</button>
+                </div>
+            </article> 
+            <article class="product" data-product="16" tabindex="0" role="button" aria-label="View Umarix Vanilla Haze details">
+                <div class="product-image">
+                    <img src="images/perfume17.png" alt="Umarix Vanilla Haze perfume" loading="lazy">
+                    <span class="image-number">17</span>
+                </div>
+                <div class="product-info">
+                    <h3>Umarix Vanilla Haze</h3>
+                    <p class="product-description">Smooth & Warm Fragrance</p>
+                    <p class="product-price">Rs. 2,999</p>
+                    <button class="add-button" onclick="event.stopPropagation(); addToCart('Umarix Vanilla Haze', 2999)">Add to Cart</button>
+                </div>
+            </article> 
+            <article class="product" data-product="17" tabindex="0" role="button" aria-label="View Umarix Silver Mist details">
+                <div class="product-image">
+                    <img src="images/perfume18.png" alt="Umarix Silver Mist perfume" loading="lazy">
+                    <span class="image-number">18</span>
+                </div>
+                <div class="product-info">
+                    <h3>Umarix Silver Mist</h3>
+                    <p class="product-description">Clean & Modern Fragrance</p>
+                    <p class="product-price">Rs. 3,099</p>
+                    <button class="add-button" onclick="event.stopPropagation(); addToCart('Umarix Silver Mist', 3099)">Add to Cart</button>
                 </div>
             </article>
         </div>
