@@ -1,82 +1,376 @@
-// ========================================
-// UMARIX PERFUMES - COMPLETE JAVASCRIPT
-// ========================================
-
 const products = [
-    { id: 1, name: "Umarix Black", price: 2999, image: "images/perfume1.jpg", tagline: "Bold & Powerful", description: "A bold fragrance concept for evenings and special occasions.", notes: "Woody, Amber" },
-    { id: 2, name: "Umarix Rose", price: 2799, image: "images/perfume2.png", tagline: "Soft & Elegant", description: "A soft floral-inspired fragrance with an elegant character.", notes: "Floral, Soft" },
-    { id: 3, name: "Umarix Gold", price: 3199, image: "images/perfume3.png", tagline: "Warm & Refined", description: "A warm, refined fragrance for everyday style.", notes: "Warm, Elegant" },
-    { id: 4, name: "Umarix Oud", price: 3299, image: "images/perfume4.png", tagline: "Rich & Woody", description: "A rich woody fragrance with a classic character.", notes: "Woody, Oud" },
-    { id: 5, name: "Umarix Ocean", price: 2999, image: "images/perfume5.png", tagline: "Fresh & Aquatic", description: "A fresh aquatic-inspired fragrance.", notes: "Fresh, Aquatic" },
-    { id: 6, name: "Umarix Velvet", price: 3199, image: "images/perfume6.png", tagline: "Smooth & Sophisticated", description: "A smooth and elegant fragrance concept.", notes: "Smooth, Elegant" },
-    { id: 7, name: "Umarix Royal", price: 3499, image: "images/perfume7.png", tagline: "Regal & Luxurious", description: "A bold fragrance inspired by classic luxury.", notes: "Rich, Warm" },
-    { id: 8, name: "Umarix Musk", price: 2999, image: "images/perfume8.png", tagline: "Warm & Memorable", description: "A soft musk-inspired fragrance.", notes: "Musk, Warm" },
-    { id: 9, name: "Umarix Noir", price: 3299, image: "images/perfume9.png", tagline: "Dark & Modern", description: "A dark, modern fragrance concept.", notes: "Dark, Modern" },
-    { id: 10, name: "Umarix Ember", price: 3299, image: "images/perfume10.png", tagline: "Warm Amber", description: "A warm amber-inspired fragrance.", notes: "Amber, Warm" },
-    { id: 11, name: "Umarix Citrus Rush", price: 2799, image: "images/perfume11.png", tagline: "Bright & Fresh", description: "A lively citrus-inspired fragrance.", notes: "Citrus, Fresh" },
-    { id: 12, name: "Umarix Aqua Storm", price: 3199, image: "images/perfume12.png", tagline: "Cool & Refreshing", description: "A cool aquatic-inspired fragrance.", notes: "Aquatic, Cool" },
-    { id: 13, name: "Umarix Amber Crown", price: 3499, image: "images/perfume13.png", tagline: "Rich & Royal", description: "A rich amber-inspired fragrance.", notes: "Amber, Rich" },
-    { id: 14, name: "Umarix Midnight Spice", price: 3299, image: "images/perfume14.png", tagline: "Dark & Spicy", description: "A bold, spicy fragrance concept.", notes: "Spicy, Dark" },
-    { id: 15, name: "Umarix Cedar Smoke", price: 3199, image: "images/perfume15.png", tagline: "Woody & Earthy", description: "A woody fragrance inspired by cedar.", notes: "Cedar, Woody" },
-    { id: 16, name: "Umarix Bloom Royale", price: 2999, image: "images/perfume16.png", tagline: "Floral & Graceful", description: "A graceful floral-inspired fragrance.", notes: "Floral, Soft" },
-    { id: 17, name: "Umarix Vanilla Haze", price: 2999, image: "images/perfume17.png", tagline: "Creamy Vanilla", description: "A creamy vanilla-inspired fragrance.", notes: "Vanilla, Creamy" },
-    { id: 18, name: "Umarix Silver Mist", price: 3099, image: "images/perfume18.png", tagline: "Clean & Modern", description: "A crisp, clean fragrance concept.", notes: "Clean, Modern" }
+    {
+        id: 1,
+        name: "Umarix Black",
+        price: 2999,
+        image: "images/perfume1.jpg",
+        tagline: "Bold & powerful fragrance",
+        description: "A confident, deep scent for evenings and special occasions.",
+        notes: "Woody • Amber"
+    },
+    {
+        id: 2,
+        name: "Umarix Rose",
+        price: 2799,
+        image: "images/perfume2.png",
+        tagline: "Soft & elegant fragrance",
+        description: "A soft floral-inspired fragrance with an elegant character.",
+        notes: "Floral • Soft"
+    },
+    {
+        id: 3,
+        name: "Umarix Gold",
+        price: 3199,
+        image: "images/perfume3.png",
+        tagline: "Warm & refined fragrance",
+        description: "A warm, refined fragrance for everyday use.",
+        notes: "Warm • Elegant"
+    },
+    {
+        id: 4,
+        name: "Umarix Oud",
+        price: 3299,
+        image: "images/perfume4.png",
+        tagline: "Rich & woody fragrance",
+        description: "A rich woody fragrance with a classic character.",
+        notes: "Woody • Oud"
+    },
+    {
+        id: 5,
+        name: "Umarix Ocean",
+        price: 2999,
+        image: "images/perfume5.png",
+        tagline: "Fresh & aquatic fragrance",
+        description: "A fresh, aquatic-inspired fragrance.",
+        notes: "Fresh • Aquatic"
+    },
+    {
+        id: 6,
+        name: "Umarix Velvet",
+        price: 3199,
+        image: "images/perfume6.png",
+        tagline: "Smooth & sophisticated",
+        description: "A smooth and elegant fragrance concept.",
+        notes: "Smooth • Elegant"
+    },
+    {
+        id: 7,
+        name: "Umarix Royal",
+        price: 3499,
+        image: "images/perfume7.png",
+        tagline: "Regal & luxurious",
+        description: "A bold fragrance concept inspired by classic luxury.",
+        notes: "Rich • Warm"
+    },
+    {
+        id: 8,
+        name: "Umarix Musk",
+        price: 2999,
+        image: "images/perfume8.png",
+        tagline: "Warm & memorable",
+        description: "A soft musk-inspired fragrance concept.",
+        notes: "Musk • Warm"
+    },
+    {
+        id: 9,
+        name: "Umarix Noir",
+        price: 3299,
+        image: "images/perfume9.png",
+        tagline: "Dark & modern",
+        description: "A dark, modern fragrance concept.",
+        notes: "Dark • Modern"
+    },
+    {
+        id: 10,
+        name: "Umarix Ember",
+        price: 3299,
+        image: "images/perfume10.png",
+        tagline: "Warm amber fragrance",
+        description: "A warm amber-inspired fragrance concept.",
+        notes: "Amber • Warm"
+    },
+    {
+        id: 11,
+        name: "Umarix Citrus Rush",
+        price: 2799,
+        image: "images/perfume11.png",
+        tagline: "Bright & fresh",
+        description: "A lively citrus-inspired fragrance concept.",
+        notes: "Citrus • Fresh"
+    },
+    {
+        id: 12,
+        name: "Umarix Aqua Storm",
+        price: 3199,
+        image: "images/perfume12.png",
+        tagline: "Cool ocean fragrance",
+        description: "A cool, aquatic-inspired fragrance concept.",
+        notes: "Aquatic • Cool"
+    },
+    {
+        id: 13,
+        name: "Umarix Amber Crown",
+        price: 3499,
+        image: "images/perfume13.png",
+        tagline: "Rich & royal",
+        description: "A rich amber-inspired fragrance concept.",
+        notes: "Amber • Rich"
+    },
+    {
+        id: 14,
+        name: "Umarix Midnight Spice",
+        price: 3299,
+        image: "images/perfume14.png",
+        tagline: "Dark spicy fragrance",
+        description: "A bold, spicy fragrance concept for evenings.",
+        notes: "Spicy • Dark"
+    },
+    {
+        id: 15,
+        name: "Umarix Cedar Smoke",
+        price: 3199,
+        image: "images/perfume15.png",
+        tagline: "Woody & earthy",
+        description: "A woody fragrance concept inspired by cedar.",
+        notes: "Cedar • Woody"
+    },
+    {
+        id: 16,
+        name: "Umarix Bloom Royale",
+        price: 2999,
+        image: "images/perfume16.png",
+        tagline: "Floral fragrance",
+        description: "A graceful floral-inspired fragrance concept.",
+        notes: "Floral • Soft"
+    },
+    {
+        id: 17,
+        name: "Umarix Vanilla Haze",
+        price: 2999,
+        image: "images/perfume17.png",
+        tagline: "Creamy vanilla fragrance",
+        description: "A creamy vanilla-inspired fragrance concept.",
+        notes: "Vanilla • Creamy"
+    },
+    {
+        id: 18,
+        name: "Umarix Silver Mist",
+        price: 3099,
+        image: "images/perfume18.png",
+        tagline: "Clean & modern",
+        description: "A crisp, clean fragrance concept.",
+        notes: "Clean • Modern"
+    }
 ];
 
-// ========================================
-// REVIEWS
-// ========================================
+let cart = [];
+let activeProduct = null;
 
 const demoReviews = {
     1: [
-        { name: "Ayaan", rating: 5, text: "The bottle design looks bold and classy." },
-        { name: "Ali", rating: 4, text: "Nice product presentation." }
+        {
+            name: "Ayaan",
+            rating: 5,
+            text: "The bottle design looks bold and classy."
+        },
+        {
+            name: "M. Ali",
+            rating: 4,
+            text: "Nice product presentation."
+        }
     ],
     10: [
-        { name: "Hassan", rating: 5, text: "Love the warm fragrance concept." }
+        {
+            name: "Hassan",
+            rating: 5,
+            text: "Love the warm amber-inspired concept."
+        }
     ],
     17: [
-        { name: "Sara", rating: 5, text: "The design looks elegant." }
+        {
+            name: "Sara",
+            rating: 5,
+            text: "The cream and gold design looks elegant."
+        }
     ],
     18: [
-        { name: "Rayyan", rating: 4, text: "Clean and modern bottle style." }
+        {
+            name: "Rayyan",
+            rating: 4,
+            text: "Clean and modern bottle style."
+        }
     ]
 };
 
-let activeProduct = null;
-let cart = [];
-let toastTimer;
+// Close the welcome popup.
+function closePopup() {
+    const popup = document.getElementById("welcomePopup");
 
-// ========================================
-// HTML ELEMENTS
-// ========================================
-
-const productGrid = document.getElementById("productGrid");
-const productModal = document.getElementById("productModal");
-const cartDrawer = document.getElementById("cartDrawer");
-const toast = document.getElementById("toast");
-
-// ========================================
-// PRICE FORMAT
-// ========================================
-
-function money(price) {
-    return "Rs. " + Number(price).toLocaleString("en-PK");
+    if (popup) {
+        popup.style.display = "none";
+    }
 }
 
-// ========================================
-// STAR RATINGS
-// ========================================
+// Read reviews saved in this browser.
+function getSavedReviews() {
+    try {
+        return JSON.parse(
+            localStorage.getItem("umarixReviews") || "{}"
+        );
+    } catch (error) {
+        return {};
+    }
+}
 
-function stars(rating) {
-    const value = Math.max(0, Math.min(5, Math.round(Number(rating) || 0)));
+// Combine demo reviews with reviews submitted by visitors.
+function allReviewsFor(productId) {
+    const saved = getSavedReviews();
+
+    return [
+        ...(demoReviews[productId] || []),
+        ...(saved[productId] || [])
+    ];
+}
+
+// Display stars.
+function stars(value) {
+    value = Math.max(0, Math.min(5, Number(value) || 0));
+
     return "★".repeat(value) + "☆".repeat(5 - value);
 }
 
-// ========================================
-// HTML TEXT SAFETY
-// ========================================
+// Format prices.
+function money(value) {
+    return "Rs. " + Number(value).toLocaleString("en-PK");
+}
 
+// Refresh ratings shown on product cards.
+function refreshCardRatings() {
+    products.forEach(product => {
+        const reviews = allReviewsFor(product.id);
+
+        const target = document.querySelector(
+            `[data-rating-for="${product.id}"]`
+        );
+
+        if (!target) return;
+
+        if (!reviews.length) {
+            target.innerHTML =
+                `☆☆☆☆☆ <span>No ratings yet</span>`;
+
+            return;
+        }
+
+        const average = reviews.reduce(
+            (sum, review) => sum + Number(review.rating),
+            0
+        ) / reviews.length;
+
+        target.innerHTML =
+            `${stars(Math.round(average))}
+            <span>${average.toFixed(1)} (${reviews.length}
+            ${reviews.length === 1 ? "review" : "reviews"})</span>`;
+    });
+}
+
+// Open product details.
+function openProductModal(productId) {
+    activeProduct = products.find(
+        product => product.id === Number(productId)
+    );
+
+    if (!activeProduct) return;
+
+    document.getElementById("modalImage").src =
+        activeProduct.image;
+
+    document.getElementById("modalImage").alt =
+        activeProduct.name + " perfume bottle";
+
+    document.getElementById("modalTitle").textContent =
+        activeProduct.name;
+
+    document.getElementById("modalNotes").textContent =
+        activeProduct.notes;
+
+    document.getElementById("modalDescription").textContent =
+        activeProduct.description;
+
+    document.getElementById("modalPrice").textContent =
+        money(activeProduct.price);
+
+    document.getElementById("detailAddButton").onclick = () => {
+        addToCart(activeProduct.id);
+    };
+
+    document.getElementById("reviewForm").reset();
+
+    renderReviews(activeProduct.id);
+
+    const modal = document.getElementById("productModal");
+
+    modal.classList.add("show");
+    modal.setAttribute("aria-hidden", "false");
+
+    document.body.style.overflow = "hidden";
+}
+
+// Close product details.
+function closeProductModal() {
+    const modal = document.getElementById("productModal");
+
+    if (!modal) return;
+
+    modal.classList.remove("show");
+    modal.setAttribute("aria-hidden", "true");
+
+    document.body.style.overflow = "";
+
+    activeProduct = null;
+}
+
+// Display product reviews.
+function renderReviews(productId) {
+    const reviews = allReviewsFor(productId);
+
+    const averageTarget =
+        document.getElementById("averageRating");
+
+    const list = document.getElementById("reviewsList");
+
+    if (!reviews.length) {
+        averageTarget.textContent = "☆☆☆☆☆ No ratings yet";
+
+        list.innerHTML =
+            '<p class="no-reviews">No reviews yet. Be the first to leave one!</p>';
+
+        return;
+    }
+
+    const average = reviews.reduce(
+        (sum, review) => sum + Number(review.rating),
+        0
+    ) / reviews.length;
+
+    averageTarget.textContent =
+        `${stars(Math.round(average))} ${average.toFixed(1)} / 5 ·
+        ${reviews.length} ${reviews.length === 1 ? "review" : "reviews"}`;
+
+    list.innerHTML = reviews.map(review => `
+        <article class="review-item">
+            <strong>${escapeHTML(review.name || "Guest")}</strong>
+
+            <div class="review-stars">
+                ${stars(Number(review.rating))}
+            </div>
+
+            <p>${escapeHTML(review.text)}</p>
+        </article>
+    `).join("");
+}
+
+// Protect the page when displaying visitor-written text.
 function escapeHTML(value) {
     return String(value).replace(/[&<>"']/g, character => ({
         "&": "&amp;",
@@ -87,288 +381,71 @@ function escapeHTML(value) {
     })[character]);
 }
 
-// ========================================
-// GET SAVED REVIEWS
-// ========================================
+// Submit a product review.
+document.getElementById("reviewForm").addEventListener(
+    "submit",
+    function (event) {
+        event.preventDefault();
 
-function getSavedReviews() {
-    try {
-        return JSON.parse(localStorage.getItem("umarixReviews") || "{}");
-    } catch (error) {
-        return {};
-    }
-}
+        if (!activeProduct) return;
 
-function allReviewsFor(productId) {
-    const savedReviews = getSavedReviews();
-
-    return [
-        ...(demoReviews[productId] || []),
-        ...(savedReviews[productId] || [])
-    ];
-}
-
-// ========================================
-// DISPLAY PRODUCTS
-// ========================================
-
-function renderProducts(searchTerm = "") {
-    const term = searchTerm.trim().toLowerCase();
-
-    const filteredProducts = products.filter(product =>
-        product.name.toLowerCase().includes(term) ||
-        product.tagline.toLowerCase().includes(term) ||
-        product.notes.toLowerCase().includes(term)
-    );
-
-    document.getElementById("collectionCount").textContent =
-        `${filteredProducts.length} perfumes`;
-
-    if (filteredProducts.length === 0) {
-        productGrid.innerHTML =
-            '<p class="empty-state">No perfumes found.</p>';
-        return;
-    }
-
-    productGrid.innerHTML = filteredProducts.map(product => `
-        <article class="product-card">
-            <button
-                class="product-image-button"
-                type="button"
-                data-details-product="${product.id}"
-                aria-label="View ${escapeHTML(product.name)} details"
-            >
-                <div class="product-image-wrap">
-                    <img
-                        src="${product.image}"
-                        alt="${escapeHTML(product.name)}"
-                        loading="lazy"
-                    >
-                    <div class="image-fallback" style="display:none">
-                        <div class="fallback-bottle">UMARIX</div>
-                        <small>PERFUMES</small>
-                    </div>
-                </div>
-            </button>
-
-            <div class="product-info">
-                <p class="product-kicker">UMARIX SIGNATURE</p>
-                <h3>${escapeHTML(product.name)}</h3>
-                <p class="product-tagline">${escapeHTML(product.tagline)}</p>
-
-                <p class="card-rating" data-rating-for="${product.id}"></p>
-
-                <div class="product-bottom">
-                    <span class="product-price">${money(product.price)}</span>
-
-                    <button
-                        class="details-button"
-                        type="button"
-                        data-details-product="${product.id}"
-                    >
-                        Details & Reviews ↗
-                    </button>
-                </div>
-            </div>
-        </article>
-    `).join("");
-
-    productGrid.querySelectorAll(".product-image-wrap img").forEach(image => {
-        image.addEventListener("error", () => {
-            image.style.display = "none";
-            image.nextElementSibling.style.display = "flex";
-        }, { once: true });
-    });
-
-    refreshCardRatings();
-}
-
-// ========================================
-// UPDATE PRODUCT RATINGS
-// ========================================
-
-function refreshCardRatings() {
-    products.forEach(product => {
-        const target = document.querySelector(
-            `[data-rating-for="${product.id}"]`
+        const chosen = this.querySelector(
+            'input[name="rating"]:checked'
         );
 
-        if (!target) return;
+        const reviewText =
+            document.getElementById("reviewText").value.trim();
 
-        const reviews = allReviewsFor(product.id);
+        if (!chosen || !reviewText) {
+            showCartMessage(
+                "Please choose a star rating and write a review."
+            );
 
-        if (!reviews.length) {
-            target.innerHTML = '☆☆☆☆☆ <span>No reviews yet</span>';
             return;
         }
 
-        const average = reviews.reduce(
-            (sum, review) => sum + Number(review.rating), 0
-        ) / reviews.length;
+        const name =
+            document.getElementById("reviewName").value.trim()
+            || "Guest";
 
-        target.innerHTML = `
-            ${stars(average)}
-            <span>${average.toFixed(1)} · ${reviews.length} reviews</span>
-        `;
-    });
-}
+        const saved = getSavedReviews();
 
-// ========================================
-// OPEN PRODUCT DETAILS
-// ========================================
+        const list = saved[activeProduct.id] || [];
 
-function openProductModal(productId) {
-    activeProduct = products.find(
-        product => product.id === Number(productId)
-    );
+        list.unshift({
+            name: name,
+            rating: Number(chosen.value),
+            text: reviewText,
+            date: new Date().toISOString()
+        });
 
-    if (!activeProduct) return;
+        saved[activeProduct.id] = list.slice(0, 100);
 
-    const image = document.getElementById("modalImage");
+        try {
+            localStorage.setItem(
+                "umarixReviews",
+                JSON.stringify(saved)
+            );
+        } catch (error) {
+            showCartMessage(
+                "Could not save review in this browser."
+            );
 
-    image.style.display = "block";
-    image.src = activeProduct.image;
-    image.alt = activeProduct.name;
+            return;
+        }
 
-    image.onerror = () => {
-        image.onerror = null;
-        image.style.display = "none";
-    };
+        this.reset();
 
-    document.getElementById("modalTitle").textContent =
-        activeProduct.name;
+        renderReviews(activeProduct.id);
+        refreshCardRatings();
 
-    document.getElementById("modalTagline").textContent =
-        activeProduct.tagline;
-
-    document.getElementById("modalNotes").textContent =
-        "Notes: " + activeProduct.notes;
-
-    document.getElementById("modalDescription").textContent =
-        activeProduct.description;
-
-    document.getElementById("modalPrice").textContent =
-        money(activeProduct.price);
-
-    document.getElementById("reviewForm").reset();
-
-    document.getElementById("detailAddButton").onclick = () => {
-        addToCart(activeProduct.id);
-    };
-
-    renderReviews(activeProduct.id);
-
-    productModal.classList.add("show");
-    productModal.setAttribute("aria-hidden", "false");
-    document.body.classList.add("modal-open");
-
-    document.getElementById("closeProductModal").focus();
-}
-
-// ========================================
-// CLOSE PRODUCT DETAILS
-// ========================================
-
-function closeProductModal() {
-    productModal.classList.remove("show");
-    productModal.setAttribute("aria-hidden", "true");
-    document.body.classList.remove("modal-open");
-    activeProduct = null;
-}
-
-// ========================================
-// DISPLAY REVIEWS
-// ========================================
-
-function renderReviews(productId) {
-    const reviews = allReviewsFor(productId);
-    const averageTarget = document.getElementById("averageRating");
-    const list = document.getElementById("reviewsList");
-
-    if (!reviews.length) {
-        averageTarget.textContent = "☆☆☆☆☆ No ratings yet";
-
-        list.innerHTML =
-            '<p class="no-reviews">No reviews yet. Be the first!</p>';
-
-        return;
-    }
-
-    const average = reviews.reduce(
-        (sum, review) => sum + Number(review.rating), 0
-    ) / reviews.length;
-
-    averageTarget.textContent =
-        `${stars(average)} ${average.toFixed(1)} / 5 · ${reviews.length} reviews`;
-
-    list.innerHTML = reviews.map(review => `
-        <article class="review-item">
-            <strong>${escapeHTML(review.name || "Guest")}</strong>
-            <div class="review-stars">${stars(review.rating)}</div>
-            <p>${escapeHTML(review.text)}</p>
-        </article>
-    `).join("");
-}
-
-// ========================================
-// SUBMIT A REVIEW
-// ========================================
-
-function submitReview(event) {
-    event.preventDefault();
-
-    if (!activeProduct) return;
-
-    const form = event.currentTarget;
-
-    const chosenRating = form.querySelector(
-        'input[name="rating"]:checked'
-    );
-
-    const reviewText =
-        document.getElementById("reviewText").value.trim();
-
-    const reviewerName =
-        document.getElementById("reviewName").value.trim() || "Guest";
-
-    if (!chosenRating || !reviewText) {
-        showToast("Choose a rating and write a review.");
-        return;
-    }
-
-    const savedReviews = getSavedReviews();
-    const productReviews = savedReviews[activeProduct.id] || [];
-
-    productReviews.unshift({
-        name: reviewerName,
-        rating: Number(chosenRating.value),
-        text: reviewText,
-        date: new Date().toISOString()
-    });
-
-    savedReviews[activeProduct.id] = productReviews.slice(0, 100);
-
-    try {
-        localStorage.setItem(
-            "umarixReviews",
-            JSON.stringify(savedReviews)
+        showCartMessage(
+            "Thanks! Your review was saved on this browser."
         );
-    } catch (error) {
-        showToast("Could not save review in this browser.");
-        return;
     }
+);
 
-    form.reset();
-    renderReviews(activeProduct.id);
-    refreshCardRatings();
-
-    showToast("Thank you! Your review has been saved.");
-}
-
-// ========================================
-// ADD PRODUCT TO CART
-// ========================================
-
+// Add a product to the cart.
 function addToCart(productId) {
     const product = products.find(
         item => item.id === Number(productId)
@@ -376,10 +453,12 @@ function addToCart(productId) {
 
     if (!product) return;
 
-    const existing = cart.find(item => item.id === product.id);
+    const existing = cart.find(
+        item => item.id === product.id
+    );
 
     if (existing) {
-        existing.quantity++;
+        existing.quantity += 1;
     } else {
         cart.push({
             id: product.id,
@@ -389,196 +468,165 @@ function addToCart(productId) {
         });
     }
 
-    updateCartCount();
-    showToast(product.name + " added to cart.");
+    updateCart();
+
+    showCartMessage(product.name + " added to cart!");
 }
 
-// ========================================
-// UPDATE CART COUNT
-// ========================================
-
-function updateCartCount() {
+// Update the cart counter.
+function updateCart() {
     const count = cart.reduce(
-        (sum, item) => sum + item.quantity, 0
+        (sum, item) => sum + item.quantity,
+        0
     );
 
     document.getElementById("cartCount").textContent = count;
 }
 
-// ========================================
-// OPEN CART
-// ========================================
-
+// Open cart and display its items.
 function openCart() {
-    renderCart();
+    const items = document.getElementById("cartItems");
+    const totalTarget = document.getElementById("cartTotal");
 
-    cartDrawer.classList.add("show");
-    cartDrawer.setAttribute("aria-hidden", "false");
-}
+    items.innerHTML = "";
 
-// ========================================
-// CLOSE CART
-// ========================================
-
-function closeCart() {
-    cartDrawer.classList.remove("show");
-    cartDrawer.setAttribute("aria-hidden", "true");
-}
-
-// ========================================
-// DISPLAY CART ITEMS
-// ========================================
-
-function renderCart() {
-    const cartItems = document.getElementById("cartItems");
     let total = 0;
 
     if (!cart.length) {
-        cartItems.innerHTML =
+        items.innerHTML =
             '<p class="no-reviews">Your cart is empty.</p>';
-    } else {
-        cartItems.innerHTML = cart.map(item => {
-            total += item.price * item.quantity;
-
-            return `
-                <div class="cart-item">
-                    <div>
-                        <h3>${escapeHTML(item.name)}</h3>
-                        <p>${money(item.price)} × ${item.quantity}</p>
-                    </div>
-
-                    <button
-                        type="button"
-                        data-remove-product="${item.id}"
-                    >
-                        Remove
-                    </button>
-                </div>
-            `;
-        }).join("");
     }
 
-    document.getElementById("cartTotal").textContent = money(total);
+    cart.forEach((item, index) => {
+        total += item.price * item.quantity;
 
-    cartItems.querySelectorAll("[data-remove-product]").forEach(button => {
-        button.addEventListener("click", () => {
-            const productId = Number(button.dataset.removeProduct);
+        const row = document.createElement("div");
 
-            cart = cart.filter(item => item.id !== productId);
+        row.className = "cart-item";
 
-            updateCartCount();
-            renderCart();
-        });
+        row.innerHTML = `
+            <div>
+                <h3>${escapeHTML(item.name)}</h3>
+                <p>${money(item.price)} × ${item.quantity}</p>
+            </div>
+
+            <button type="button" data-remove-index="${index}">
+                Remove
+            </button>
+        `;
+
+        items.appendChild(row);
     });
+
+    items.querySelectorAll("[data-remove-index]").forEach(
+        button => {
+            button.addEventListener("click", () => {
+                removeFromCart(
+                    Number(button.dataset.removeIndex)
+                );
+            });
+        }
+    );
+
+    totalTarget.textContent = money(total);
+
+    document.getElementById("cartBox").classList.add("show");
 }
 
-// ========================================
-// SHOW NOTIFICATION
-// ========================================
+// Close cart.
+function closeCart() {
+    document.getElementById("cartBox").classList.remove("show");
+}
 
-function showToast(message) {
-    toast.textContent = message;
-    toast.classList.add("show");
+// Remove an item from the cart.
+function removeFromCart(index) {
+    cart.splice(index, 1);
 
-    clearTimeout(toastTimer);
+    updateCart();
+    openCart();
+}
 
-    toastTimer = setTimeout(() => {
-        toast.classList.remove("show");
+// Show a small message.
+function showCartMessage(message) {
+    const box = document.getElementById("cartMessage");
+
+    box.textContent = "✓ " + message;
+    box.classList.add("show");
+
+    window.clearTimeout(showCartMessage.timer);
+
+    showCartMessage.timer = window.setTimeout(() => {
+        box.classList.remove("show");
     }, 2600);
 }
 
-// ========================================
-// PRODUCT DETAILS BUTTONS
-// ========================================
-
-productGrid.addEventListener("click", event => {
-    const button = event.target.closest("[data-details-product]");
-
-    if (button) {
-        openProductModal(button.dataset.detailsProduct);
+// Demo checkout message.
+function openCheckout() {
+    if (cart.length) {
+        showCartMessage(
+            "Demo checkout is not connected yet."
+        );
+    } else {
+        showCartMessage("Your cart is empty!");
     }
+}
+
+// Make product cards clickable.
+document.querySelectorAll(".product").forEach(card => {
+    card.addEventListener("click", event => {
+        if (event.target.closest("button")) return;
+
+        openProductModal(card.dataset.productId);
+    });
+
+    card.addEventListener("keydown", event => {
+        if (
+            (event.key === "Enter" || event.key === " ") &&
+            event.target === card
+        ) {
+            event.preventDefault();
+
+            openProductModal(card.dataset.productId);
+        }
+    });
 });
 
-// ========================================
-// SEARCH PRODUCTS
-// ========================================
-
-document.getElementById("searchInput").addEventListener("input", event => {
-    renderProducts(event.target.value);
-});
-
-// ========================================
-// REVIEW FORM
-// ========================================
-
-document.getElementById("reviewForm").addEventListener(
-    "submit",
-    submitReview
-);
-
-// ========================================
-// MODAL AND CART BUTTONS
-// ========================================
-
-document.getElementById("closeProductModal").addEventListener(
-    "click",
-    closeProductModal
-);
-
-document.getElementById("openCartButton").addEventListener(
-    "click",
-    openCart
-);
-
-document.getElementById("closeCartButton").addEventListener(
-    "click",
-    closeCart
-);
-
-// ========================================
-// CLOSE MODAL BY CLICKING BACKGROUND
-// ========================================
-
-productModal.addEventListener("click", event => {
-    if (event.target === productModal) {
-        closeProductModal();
+// Details buttons.
+document.querySelectorAll("[data-details-product]").forEach(
+    button => {
+        button.addEventListener("click", () => {
+            openProductModal(
+                button.dataset.detailsProduct
+            );
+        });
     }
-});
+);
 
-// ========================================
-// ESCAPE KEY
-// ========================================
+// Add-to-cart buttons.
+document.querySelectorAll("[data-add-product]").forEach(
+    button => {
+        button.addEventListener("click", () => {
+            addToCart(button.dataset.addProduct);
+        });
+    }
+);
 
+// Close product details by clicking outside the modal.
+document.getElementById("productModal").addEventListener(
+    "click",
+    event => {
+        if (event.target.id === "productModal") {
+            closeProductModal();
+        }
+    }
+);
+
+// Escape key closes product details.
 document.addEventListener("keydown", event => {
     if (event.key === "Escape") {
         closeProductModal();
-        closeCart();
     }
 });
 
-// ========================================
-// DEMO CHECKOUT
-// ========================================
-
-document.getElementById("checkoutButton").addEventListener("click", () => {
-    if (!cart.length) {
-        showToast("Your cart is empty.");
-        return;
-    }
-
-    showToast("Demo checkout only. Online payment is not connected.");
-});
-
-// ========================================
-// CURRENT YEAR IN FOOTER
-// ========================================
-
-document.getElementById("currentYear").textContent =
-    new Date().getFullYear();
-
-// ========================================
-// INITIALIZE WEBSITE
-// ========================================
-
-renderProducts();
-updateCartCount();
+// Display existing ratings when the page loads.
+refreshCardRatings();
