@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Umarix Perfumes</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="welcomePopup" class="popup">
+    <div class="popup-box">
+      <p class="eyebrow">WELCOME TO</p><h1>UMARIX</h1>
+      <p>Discover your signature scent. 🖤💛</p>
+      <button class="gold-button" onclick="closePopup()">Enter Website</button>
+    </div>
+  </div>
+
+  <nav class="navbar">
+    <a class="logo" href="#home">UMARIX<span> PERFUMES</span></a>
+    <div class="nav-links"><a href="#home">Home</a><a href="#products">Products</a><a href="#about">About</a><a href="#contact">Contact</a></div>
+    <button class="cart-link" onclick="openCart()">🛒 Cart <span id="cartCount">0</span></button>
+  </nav>
+
+  <main>
+    <section id="home" class="home">
+      <div class="home-content">
+        <p class="eyebrow">THE UMARIX EXPERIENCE</p>
+        <h1>Your Scent.<br><span>Your Identity.</span></h1>
+        <p class="hero-text">Discover bold, elegant and unforgettable fragrances crafted for those who want to stand out.</p>
+        <div class="hero-buttons"><a href="#products" class="gold-button">Explore Collection</a><a href="#about" class="outline-button">Discover Umarix</a></div>
+      </div>
+      <div class="hero-badge">✦<br> LUXURY<br>FRAGRANCE</div>
+    </section>
+
+    <section class="why-umarix section">
+      <p class="eyebrow">THE UMARIX EXPERIENCE</p><h2>Why Choose Umarix?</h2>
+      <div class="why-cards">
+        <article class="why-card"><div class="why-icon">✦</div><h3>Premium Quality</h3><p>Carefully designed fragrances made to leave a lasting impression.</p></article>
+        <article class="why-card"><div class="why-icon">◈</div><h3>Long Lasting</h3><p>Scents created to stay memorable throughout your day.</p></article>
+        <article class="why-card"><div class="why-icon">◆</div><h3>Elegant Style</h3><p>Sophisticated fragrances for every mood and occasion.</p></article>
+      </div>
+    </section>
+
+    <section id="products" class="section products-section">
+      <p class="eyebrow">OUR COLLECTION</p><h2>Our Perfumes</h2>
+      <p class="section-intro">Select any perfume to explore its details.</p>
+      <div class="products">
+        <article class="product" tabindex="0" role="button" data-product="0" aria-label="View Umarix Black details">
+          <div class="product-image"><img src="images/perfume1.jpg" alt="Umarix Black" loading="lazy"><span class="image-number">01</span></div>
+          <div class="product-info"><h3>Umarix Black</h3><p class="product-description">Bold &amp; Powerful Fragrance</p><p class="product-price">Rs. 2,999</p><button class="add-button" onclick="event.stopPropagation(); addToCart('Umarix Black',2999)">Add to Cart</button></div>
+        </article>
+        <article class="product" tabindex="0" role="button" data-product="1" aria-label="View Umarix Gold details">
+          <div class="product-image"><img src="images/perfume2.jpg" alt="Umarix Gold" loading="lazy"><span class="image-number">02</span></div>
+          <div class="product-info"><h3>Umarix Gold</h3><p class="product-description">Luxury &amp; Elegant Fragrance</p><p class="product-price">Rs. 3,499</p><button class="add-button" onclick="event.stopPropagation(); addToCart('Umarix Gold',3499)">Add to Cart</button></div>
+        </article>
+        <article class="product" tabindex="0" role="button" data-product="2" aria-label="View Umarix Night details">
+          <div class="product-image"><img src="images/perfume3.jpg" alt="Umarix Night" loading="lazy"><span class="image-number">03</span></div>
+          <div class="product-info"><h3>Umarix Night</h3><p class="product-description">Fresh &amp; Mysterious Fragrance</p><p class="product-price">Rs. 2,499</p><button class="add-button" onclick="event.stopPropagation(); addToCart('Umarix Night',2499)">Add to Cart</button></div>
+        </article>
+        <article class="product coming-soon" tabindex="0" role="button" data-product="3" aria-label="View Umarix Rose details">
+          <div class="product-image"><img src="images/perfume4.png" alt="Umarix Rose" loading="lazy"><span class="image-number">04</span></div>
+          <div class="product-info"><h3>Umarix Rose</h3><p class="product-description">Soft &amp; Elegant Fragrance</p><p class="product-price">Price coming soon</p><span class="coming-label">Coming Soon</span></div>
+        </article>
+        <article class="product coming-soon" tabindex="0" role="button" data-product="4" aria-label="View Umarix Oud details">
+          <div class="product-image"><img src="images/perfume5.png" alt="Umarix Oud" loading="lazy"><span class="image-number">05</span></div>
+          <div class="product-info"><h3>Umarix Oud</h3><p class="product-description">Rich &amp; Woody Fragrance</p><p class="product-price">Price coming soon</p><span class="coming-label">Coming Soon</span></div>
+        </article>
+        <article class="product coming-soon" tabindex="0" role="button" data-product="5" aria-label="View Umarix Ocean details">
+          <div class="product-image"><img src="images/perfume6.png" alt="Umarix Ocean" loading="lazy"><span class="image-number">06</span></div>
+          <div class="product-info"><h3>Umarix Ocean</h3><p class="product-description">Fresh &amp; Aquatic Fragrance</p><p class="product-price">Price coming soon</p><span class="coming-label">Coming Soon</span></div>
+        </article>
+        <article class="product coming-soon" tabindex="0" role="button" data-product="6" aria-label="View Umarix Velvet details">
+          <div class="product-image"><img src="images/perfume7.png" alt="Umarix Velvet" loading="lazy"><span class="image-number">07</span></div>
+          <div class="product-info"><h3>Umarix Velvet</h3><p class="product-description">Smooth &amp; Sophisticated Fragrance</p><p class="product-price">Price coming soon</p><span class="coming-label">Coming Soon</span></div>
+        </article>
+        <article class="product coming-soon" tabindex="0" role="button" data-product="7" aria-label="View Umarix Royal details">
+          <div class="product-image"><img src="images/perfume8.png" alt="Umarix Royal" loading="lazy"><span class="image-number">08</span></div>
+          <div class="product-info"><h3>Umarix Royal</h3><p class="product-description">Regal &amp; Luxurious Fragrance</p><p class="product-price">Price coming soon</p><span class="coming-label">Coming Soon</span></div>
+        </article>
+        <article class="product coming-soon" tabindex="0" role="button" data-product="8" aria-label="View Umarix Musk details">
+          <div class="product-image"><img src="images/perfume9.png" alt="Umarix Musk" loading="lazy"><span class="image-number">09</span></div>
+          <div class="product-info"><h3>Umarix Musk</h3><p class="product-description">Warm &amp; Memorable Fragrance</p><p class="product-price">Price coming soon</p><span class="coming-label">Coming Soon</span></div>
+        </article>
+      </div>
+    </section>
+
+    <section id="about" class="section about"><p class="eyebrow">OUR STORY</p><h2>About Umarix</h2><p>Umarix Perfumes is a luxury fragrance brand focused on creating bold, elegant and memorable scents for everyone.</p><p>Our goal is simple — make every person feel confident when they wear their signature fragrance.</p></section>
+    <section id="contact" class="section contact"><p class="eyebrow">GET IN TOUCH</p><h2>Contact Us</h2><p>Email: contact@umarixperfumes.com</p><p>Phone: +92 300 0000000</p></section>
+  </main>
+
+  <footer><p>© 2026 Umarix Perfumes. All Rights Reserved.</p></footer>
+
+  <div id="productModal" class="modal" aria-hidden="true"><div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="detailName"><button class="modal-close" onclick="closeProductDetails()" aria-label="Close details">×</button><img id="detailImage" src="" alt=""><div class="modal-copy"><p class="eyebrow">UMARIX FRAGRANCE</p><h2 id="detailName"></h2><p id="detailDescription"></p><p id="detailPrice" class="product-price"></p><button id="detailAddButton" class="gold-button">Add to Cart</button></div></div></div>
+
+  <aside id="cartBox" class="cart-box" aria-label="Shopping cart"><div class="cart-header"><h2>Your Cart 🛒</h2><button onclick="closeCart()" aria-label="Close cart">×</button></div><div id="cartItems"></div><div class="cart-total"><strong>Total:</strong><span id="cartTotal">Rs. 0</span></div><button class="gold-button checkout-button" onclick="openCheckout()">Checkout</button></aside>
+  <div id="cartMessage" class="cart-message" role="status" aria-live="polite"></div>
+  <div id="checkoutMessage" class="checkout-message" hidden>Checkout can be connected to an order form in the next step.</div>
+  <script src="script.js"></script>
+</body>
+</html>
